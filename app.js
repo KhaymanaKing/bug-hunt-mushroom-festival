@@ -43,7 +43,7 @@ function displayFriends() {
             }
             if (mushroomCount > 0 && friendInState.satisfaction < 3) {
                 friendInState.satisfaction++;
-                mushroomCount++;
+                mushroomCount--;
         
                 displayFriends(friendData);
                 displayMushrooms();    
@@ -66,7 +66,7 @@ function displayMushrooms() {
 
 
 addFriendButton.addEventListener('click', () => {
-    const friendInputEl = document.querySelector;
+    const friendInputEl = document.querySelector('input');
     const name = friendInputEl.value;
 
     addFriend(name, friendData);
