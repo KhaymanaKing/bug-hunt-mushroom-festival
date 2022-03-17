@@ -2,6 +2,8 @@ export function renderMushroom() {
     const div = document.createElement('div');
     div.classList.add('mushroom');
 
+
+    return div;
 }
 
 export function renderFriend(friend) {
@@ -28,5 +30,7 @@ export function renderFriend(friend) {
     }
 
     div.append(nameEl, emojiEl);
+
+    return div;
 
 }
